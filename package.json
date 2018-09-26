@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoslynWu/emu.git"
+    "url": "https://github.com/JoslynWu/run-emu.git"
   },
-  "homepage": "https://github.com/JoslynWu/emu",
+  "homepage": "https://github.com/JoslynWu/run-emu",
   "author": "Joslyn",
   "license": "MIT",
   "dependencies": {

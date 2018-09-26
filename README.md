@@ -1,4 +1,4 @@
-# [emu](https://github.com/JoslynWu/emu) &middot; [![npm version](https://badge.fury.io/js/run-emu.svg)](https://badge.fury.io/js/run-emu)
+# [emu](https://github.com/JoslynWu/run-emu) &middot; [![npm version](https://badge.fury.io/js/run-emu.svg)](https://badge.fury.io/js/run-emu)
 
 Launch iOS simulator or android emulator.
 
