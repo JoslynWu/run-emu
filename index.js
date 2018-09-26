@@ -23,7 +23,7 @@ const PlatformType = {
 
 // ---------- command ----------
 progrm
-    .version('0.2.0')
+    .version('0.2.1')
     .option('-l --list [ios|android]', 'list iOS simulator or android emulator.')
 
 progrm
@@ -233,5 +233,5 @@ function formattedDeviceName(name, reverse = false) {
 }
 
 function emulatorLink() {
-    return process.env.ANDROID_HOME + '/tools/emulator'
+    return process.env.ANDROID_HOME + '/emulator/emulator'
 }
