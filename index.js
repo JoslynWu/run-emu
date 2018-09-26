@@ -30,8 +30,9 @@ progrm
     .command('run <name>')
     .description('launch simulator or emulator')
     .action((name, options) => {
-        let matchEmu = findMatchingSimulator(name) // iOS approximate
-        if (matchEmu && matchEmu.name === name) { // iOS
+        let label = formattedDeviceName(name, true)
+        let matchEmu = findMatchingSimulator(label) // iOS approximate
+        if (matchEmu && matchEmu.name === label) { // iOS
             launchSimulator(name)
         } else {
             launchEmulator(name)
@@ -167,7 +168,7 @@ function launchSimulator(name) {
 }
 
 function launchEmulator(name) {
-    try { 
+    try {
         child_process.execFileSync(emulatorLink(), ['-netdelay', 'none', '-netspeed', 'full', '-avd', name], { encoding: 'utf8' })
     } catch (e) {
         console.log(e)
@@ -234,4 +235,3 @@ function formattedDeviceName(name, reverse = false) {
 function emulatorLink() {
     return process.env.ANDROID_HOME + '/tools/emulator'
 }
-

@@ -1,13 +1,13 @@
 {
-  "name": "emu",
-  "version": "0.0.1",
+  "name": "run-emu",
+  "version": "0.1.0",
   "description": "Launch iOS simulator or android emulator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "emu": "./index.js"
+    "run-emu": "./index.js"
   },
   "repository": {
     "type": "git",
