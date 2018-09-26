@@ -1,6 +1,6 @@
 {
   "name": "run-emu",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Launch iOS simulator or android emulator",
   "main": "index.js",
   "scripts": {
