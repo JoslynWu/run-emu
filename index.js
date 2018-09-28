@@ -156,9 +156,9 @@ function launchSimulator(name) {
         throw new Error(`Could not find ${simulatorLabel} simulator`);
     }
     if (!selectedSimulator.booted) {
-        console.log(`Launching${selectedSimulator.name} (${selectedSimulator.version}) ...`);
+        console.log(`Launching ${selectedSimulator.name} (${selectedSimulator.version}) ...`);
         try {
-            child_process.spawnSync('xcrun', ['instruments', '-w', selectedSimulator.udid]);
+            child_process.spawnSync('open', ['-a', 'Simulator', '--args', '-CurrentDeviceUDID', selectedSimulator.udid]);
         } catch (e) {
             console.log(e)
             // instruments always fail with 255 because it expects more arguments,
