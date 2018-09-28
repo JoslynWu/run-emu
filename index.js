@@ -23,7 +23,7 @@ const PlatformType = {
 
 // ---------- command ----------
 progrm
-    .version('0.2.2')
+    .version('1.0.0')
     .option('-l --list [ios|android]', 'list iOS simulator or android emulator.')
 
 progrm
